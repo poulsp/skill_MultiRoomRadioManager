@@ -1,0 +1,147 @@
+{
+	"radioPlaying": {
+			"default": [
+				"Tuning in to {}, {}."
+			],
+			"short": [
+				"Tuning in to {}, {}."
+			]
+	},
+	"stopRadio": {
+			"default": [
+				"Okay."
+			],
+			"short": [
+				"Okay."
+			]
+	},
+	"getStationInfo": {
+		"default": [
+			"The radio station playing now is, {}, {}."
+		],
+		"short": [
+			"Playing now is, {}, {}."
+		]
+	},
+	"playAtAdditionalRoom": {
+		"default": [
+			"adding play site {}."
+		],
+		"short": [
+			"playing at {} to."
+		]
+	},
+	"stopPlayAt": {
+		"default": [
+			"Okay, closing site {}."
+		],
+		"short": [
+			"Closing site {}."
+		]
+	},
+	"movePlayer": {
+		"default": [
+			"Okay."
+		],
+		"short": [
+			"Okay."
+		]
+	},
+	"gestureSensorStopRadio": {
+		"default": [
+			"Close radio."
+		],
+		"short": [
+			"Close radio."
+		]
+	},
+	"stationErrorInfo": {
+		"default": [
+			"There is no radio station playing now."
+		],
+		"short": [
+			"No station playing."
+		]
+	},
+	"errorSlotPlaySiteNotInRooms": {
+		"default": [
+			"Room is not defined!."
+		],
+		"short": [
+			"Room is not defined!."
+		]
+	},
+	"errorSlotDefault": {
+		"default": [
+			"Something went wrong, please try again."
+		],
+		"short": [
+			"Please try again."
+		]
+	},
+	"errorSlotNoStation": {
+		"default": [
+			"No station specified, please try again."
+		],
+		"short": [
+			"Please try again."
+		]
+	},
+	"errorSlotStationNotExist": {
+		"default": [
+			"The selected radio station doesn't exist."
+		],
+		"short": [
+			"station doesn't exist."
+		]
+	},
+	"errorSlotLocation": {
+		"default": [
+			"You must specify a playback location, alias site."
+		],
+		"short": [
+			"Specify a play back location."
+		]
+	},
+	"errorSlotException": {
+		"default": [
+			"Shit happens an Exception, {}."
+		],
+		"short": [
+			"Shit happens an Exception, {}."
+		]
+	},
+	"offline": {
+		"default": [
+			"{}, is offline."
+		],
+		"short": [
+			"{}, is offline."
+		]
+	},
+	"UnknownRadioStation": {
+		"default": [
+			"Unknown radio station."
+		],
+		"short": [
+			"Unknown radio station."
+		]
+	},
+	"endStreamingRadio": {
+		"default": [
+			"radio off.",
+			"stops radio."
+		],
+		"short": [
+			"radio off."
+		]
+	},
+	"xxxx2": {
+		"default": [
+			"{}."
+		],
+		"short": [
+			"{}."
+		]
+	}
+}

@@ -1,0 +1,212 @@
+{
+  "radio 1": [
+    "Rockabilly Radio",
+    "35%",
+    "http://209.9.238.6:6042",
+    true
+  ],
+  "radio 10": [
+    "Veronica",
+    "40%",
+    "http://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3",
+    true
+  ],
+  "radio 11": [
+    "Classic Praha",
+    "50%",
+    "http://icecast8.play.cz:80/classic128.mp3",
+    true
+  ],
+  "radio 12": [
+    "Venice Classic Radio Italia",
+    "45%",
+    "http://174.36.206.197:8000/stream",
+    true
+  ],
+  "radio 13": [
+    "1.FM - Ottos Opera",
+    "35%",
+    "http://strm112.1.fm/opera_mobile_mp3",
+    true
+  ],
+  "radio 14": [
+    "1.FM - Blues",
+    "35%",
+    "http://185.33.21.112:80/blues_128",
+    true
+  ],
+  "radio 15": [
+    "1.FM - Bossa Nova Hits",
+    "35%",
+    "http://185.33.21.112:80/bossanova_128",
+    true
+  ],
+  "radio 16": [
+    "1.FM - Classic Country",
+    "35%",
+    "http://185.33.21.112:80/ccountry_128",
+    true
+  ],
+  "radio 17": [
+    "Hope Radio Ireland - Top 40 Oldies",
+    "35%",
+    "http://162.216.17.221:8110/stream",
+    true
+  ],
+  "radio 18": [
+    "Dixieland-Oasis",
+    "35%",
+    "http://ca8.rcast.net:8018",
+    true
+  ],
+  "radio 19": [
+    "Radio Austral",
+    "35%",
+    "http://radioaustral.serverroom.us:8516/stream/1/",
+    true
+  ],
+  "radio 2": [
+    "The krush, fm 95.9",
+    "40%",
+    "http://17853.live.streamtheworld.com/KRSHFMAAC.aac",
+    true
+  ],
+  "radio 20": [
+    "ABC Radio Australian",
+    "35%",
+    "https://live-radio01.mediahubaustralia.com/RAEW/mp3/",
+    true
+  ],
+  "radio 21": [
+    "ABC Radio (Brisbane)",
+    "40%",
+    "https://live-radio01.mediahubaustralia.com/4LRW/mp3/",
+    true
+  ],
+  "radio 22": [
+    "kiss FM Australian",
+    "35%",
+    "http://cc.net2streams.com:8565/kissfm.mp3",
+    true
+  ],
+  "radio 23": [
+    "Radio Pilatus Schweiz",
+    "35%",
+    "https://radiopilatus.ice.infomaniak.ch/pilatus192.mp3",
+    true
+  ],
+  "radio 24": [
+    "Bandit Rock Sweden",
+    "35%",
+    "https://fm02-ice.stream.khz.se/fm02_mp3?platform=web",
+    true
+  ],
+  "radio 25": [
+    "Vinyl godis Sweden",
+    "35%",
+    "https://securestreams2.autopo.st:1061/stream//1/",
+    true
+  ],
+  "radio 26": [
+    "Guldkanalen 70-tal Sweden",
+    "30%",
+    "http://stream.dbmedia.se/gk70tal96",
+    true
+  ],
+  "radio 27": [
+    "Guldkanalen 80-tal Sweden",
+    "30%",
+    "http://stream.dbmedia.se/gk80talMP3",
+    true
+  ],
+  "radio 28": [
+    "Guldkanalen 90-tal Sweden",
+    "30%",
+    "http://stream.dbmedia.se/gk90talMP3",
+    true
+  ],
+  "radio 29": [
+    "Spektra FM (Valencia) Spain",
+    "35%",
+    "https://stm2.emiteonline.com:9008/spektrafm",
+    true
+  ],
+  "radio 3": [
+    "CLASSIC ROCK RADIO HD",
+    "30%",
+    "http://us5.internet-radio.com:8267/listen.pls",
+    false
+  ],
+  "radio 30": [
+    "esRadio Spain",
+    "35%",
+    "https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-low.mp3",
+    true
+  ],
+  "radio 31": [
+    "Raggakings Radio FM Jamaica",
+    "35%",
+    "https://raggakings.radio:8443/stream.ogg",
+    true
+  ],
+  "radio 32": [
+    "Go Figure Radio Jamaica",
+    "35%",
+    "https://ny.mysonicserver.com/8038/stream",
+    true
+  ],
+  "radio 34": [
+    "East Coast FM Ireland",
+    "35%",
+    "https://stream.audioxi.com/EASTCOAST",
+    true
+  ],
+  "radio 35": [
+    "100% NL Party",
+    "30%",
+    "http://stream.radiocorp.nl/100pnl_feest_mp3",
+    true
+  ],
+  "radio 36": [
+    "100% NL",
+    "30%",
+    "http://stream.100p.nl/100pctnl.mp3",
+    true
+  ],
+  "radio 4": [
+    "Velvet 96.8",
+    "35%",
+    "http://s10.voscast.com:9942",
+    true
+  ],
+  "radio 5": [
+    "LiveIreland (Dublin)",
+    "35%",
+    "http://192.111.140.11:8058/stream/1/",
+    true
+  ],
+  "radio 6": [
+    "Skyradio",
+    "30%",
+    "http://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3",
+    true
+  ],
+  "radio 7": [
+    "3 FM",
+    "30%",
+    "http://icecast.omroep.nl/3fm-bb-mp3",
+    true
+  ],
+  "radio 8": [
+    "Bliss 104.3",
+    "40%",
+    "http://66.55.145.43:7006",
+    true
+  ],
+  "radio 9": [
+    "Radio Swiss Jazz",
+    "50%",
+    "http://stream.srg-ssr.ch/m/rsj/aacp_96",
+    true
+  ]
+}

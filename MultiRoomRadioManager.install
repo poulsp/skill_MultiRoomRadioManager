@@ -1,0 +1,27 @@
+{
+	"name": "MultiRoomRadioManager",
+	"speakableName": "Multi Room Radio Managerr",
+	"version": "0.0.1",
+	"icon": "fab fa-battle-net",
+	"category": "entertainment",
+	"author": "poulsp",
+	"maintainers": [],
+	"desc": "Manage internet radio stations and players in the synchronous multiroom audio system.",
+	"aliceMinVersion": "1.0.0-b5",
+	"pipRequirements": [
+		""
+	],
+	"systemRequirements": [
+		""
+	],
+	"conditions": {
+		"lang": [
+			"en"
+		],
+		"online": true,
+		"asrArbitraryCapture": true,
+		"skill": [
+			"MultiRoomMediaVolume"
+		]
+	}
+}

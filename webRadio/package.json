@@ -1,0 +1,34 @@
+{
+  "name": "site-alice-radio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "serverstart": "DEBUG=aliceSite:* npm run dev",
+    "lint": "eslint ./js"
+  },
+  "dependencies": {
+    "@moebius/http-graceful-shutdown": "1.1.0",
+    "async": "^3.2.0",
+    "async-mqtt": "2.6.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "form-data": "4.0.0",
+    "http-errors": "~1.6.3",
+    "moment": "^2.26.0",
+    "morgan": "~1.9.1",
+    "mqtt": "^4.1.0",
+    "node-fetch": "2.6.1",
+    "request": "^2.88.2",
+    "virtual-keyboard": "^1.30.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "nodemon": "^2.0.4"
+  },
+  "author": "poulsp",
+  "license": "ISC"
+}

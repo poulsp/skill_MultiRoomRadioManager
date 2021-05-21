@@ -1,0 +1,111 @@
+/*
+body { height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #26316D;
+}
+*/
+
+html, body, #fullheight {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #26316D;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .tableFixHead          { overflow-y: auto; height: 100px; }*/
+.tableFixHead          { overflow-y: auto; height: 90vh; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+table  { border-collapse: collapse; width: 100%; }
+
+
+/*#customers td, #customers tr, #customers th {*/
+
+#customers td, #customers th {
+ /* border-buttom: 1px solid #000; */
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+
+#customers tr:nth-child(even){background-color: #4255bd;}
+
+/* #customers tr:nth-child(even){background-color: rgb(38, 49, 109,.50);} */
+
+
+
+#customers tr:hover {background-color: #607d8b;}
+
+#customers th {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+p, #openNav {
+color: white;
+}
+
+img.picHome {
+  height: 50%;
+  width: 50%;
+}
+
+.active>a {
+  color: #1abc9c !important;;
+}
+.frame-area {
+border:hidden;
+display: block;
+width: 100%;  /* RESPONSIVE WIDTH */
+max-width: 800px;
+height: 480px;
+overflow: auto; /* EDIT TO hidden FOR NO SCROLLBAR */
+/*overflow: hidden;*/  /* EDIT TO hidden FOR NO SCROLLBAR */
+/* border: #999999 1px solid;*/
+margin: 0px;
+padding: 0px;
+}
+
+
+
+
+#th0 {width: 1%;}
+#th2 {width: 2%;}
+#th4 {width: 12%;}
+#th4 {width: 4%;}
+#th1 {width: 81%;}
+
+/*
+#cell0 {width: 1%;}
+#cell2 {width: 2%;}
+#cell4 {width: 12%;}
+#cell4 {width: 4%;}
+#cell1 {width: 81%;}
+*/
+
+
+
+/*
+/* https://css-tricks.com/almanac/properties/t/table-layout/*/
+/*
+th, tr, td {
+  border: 1px solid black;
+  width: 10%;
+  /*overflow: hidden;*/
+/*
+}
+*/

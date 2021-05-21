@@ -1,0 +1,4 @@
+{
+    "aliceHost": "<aliceHostIp>",
+    "aliceWebPort": "<aliceWebPort>"
+}

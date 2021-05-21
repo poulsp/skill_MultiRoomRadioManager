@@ -1,0 +1,13 @@
+{
+	"development": {
+		"config_id": "development",
+		"app_name": "web-radio",
+		"app_desc": "",
+		"json_indentation": 4,
+		"node_port": "unknown",
+		"aliceIp": "unknown",
+		"aliceWebInterfacePort": "5000",
+	  "apiPort": "5001",
+		"apiToken": "unknown"
+	}
+}

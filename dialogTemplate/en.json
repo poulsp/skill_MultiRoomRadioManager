@@ -1,0 +1,204 @@
+{
+	"skill": "MultiRoomRadioManager",
+    "slotTypes": [
+      {
+        "name": "Psp/Room",
+        "matchingStrictness": null,
+        "automaticallyExtensible": true,
+        "useSynonyms": true,
+        "values": [
+          {
+            "value": "everywhere",
+            "synonyms": [
+              "all",
+              "all locations"
+            ]
+          },
+          {
+            "value": "base",
+            "synonyms": []
+          },
+          {
+            "value": "cellar",
+            "synonyms": [
+              "basement"
+            ]
+          },
+          {
+            "value": "dining room",
+            "synonyms": [
+              "living room"
+            ]
+          },
+          {
+            "value": "entrance"
+          },
+          {
+            "value": "kitchen"
+          },
+          {
+            "value": "laundry"
+          },
+          {
+            "value": "lounge"
+          },
+          {
+            "value": "office"
+          },
+          {
+            "value": "bedroom"
+          },
+          {
+            "value": "outdoor"
+          },
+          {
+            "value": "pantry"
+          },
+          {
+            "value": "toilet",
+            "synonyms": [
+              "bathroom"
+            ]
+          }
+        ]
+      }
+    ],
+    "intents": [
+        {
+          "name": "getStationInfo",
+          "enabledByDefault": true,
+          "utterances": [
+            "what station playing",
+            "who is playing",
+            "who play",
+            "which radio play",
+            "playing now",
+            "what station now",
+            "what station"
+          ],
+          "slots": []
+        },
+        {
+          "name": "playRadio",
+          "enabledByDefault": true,
+          "utterances": [
+            "radio {37:=>Station} at {everywhere:=>Room}",
+            "radio {9:=>Station} at {dining room:=>Room}",
+            "radio {23:=>Station} at {dining room:=>Room}",
+            "radio {1:=>Station} at {kitchen:=>Room}",
+            "radio {11:=>Station} at {office:=>Room}",
+            "radio {8:=>Station} at {laundry:=>Room}",
+            "radio {11:=>Station}",
+            "radio {1:=>Station}",
+            "radio {2:=>Station}",
+            "radio {3:=>Station}",
+            "radio {54:=>Station}",
+            "play radio {11:=>Station}",
+            "play radio {45:=>Station}",
+            "play radio {53:=>Station}",
+            "play radio {2:=>Station} at {office:=>Room}",
+            "play radio {3:=>Station} at {kitchen:=>Room}",
+            "play radio {4:=>Station} at {dining room:=>Room}",
+            "play radio {55:=>Station} at {outdoor:=>Room}",
+            "play radio {15:=>Station} at {living room:=>Room}",
+            "play radio {24:=>Station} at {lounge:=>Room}",
+            "play radio station {11:=>Station}",
+            "play radio station {45:=>Station}",
+            "play radio station {53:=>Station}",
+            "play radio station {2:=>Station} at {office:=>Room}",
+            "play radio station {3:=>Station} at {kitchen:=>Room}",
+            "play radio station {4:=>Station} at {dining room:=>Room}",
+            "play radio station {55:=>Station} at {outdoor:=>Room}",
+            "play radio station {15:=>Station} at {living room:=>Room}",
+            "play radio station {24:=>Station} at {lounge:=>Room}"
+          ],
+          "slots": [
+              {
+                "name": "Station",
+                "required": false,
+                "type": "snips/number",
+                "missingQuestion": ""
+              },
+              {
+                "name": "Room",
+                "required": false,
+                "type": "Psp/Room",
+                "missingQuestion": ""
+              }
+          ]
+        },
+        {
+          "name": "playAtAdditionalRoom",
+          "enabledByDefault": true,
+          "utterances": [
+            "play at {outdoor:=>Room}",
+            "play at {lounge:=>Room}",
+            "play at {kitchen:=>Room}",
+            "play at {office:=>Room}",
+            "play at {bedroom:=>Room}",
+            "play at {everywhere:=>Room}",
+            "play at {all:=>Room}",
+            "play at {laundry:=>Room}",
+            "play at {base:=>Room}"
+          ],
+          "slots": [
+              {
+                "name": "Room",
+                "required": false,
+                "type": "Psp/Room",
+                "missingQuestion": ""
+              }
+          ]
+        },
+        {
+          "name": "stopRadio",
+          "enabledByDefault": true,
+          "utterances": [
+            "stop radio",
+            "stop playing radio",
+            "stop playing",
+            "radio stop",
+            "radio off",
+            "close radio",
+            "KLOS radio",
+            "stop playing at {outdoor:=>Room}",
+            "stop playing at {lounge:=>Room}",
+            "stop playing at {kitchen:=>Room}",
+            "stop playing at {office:=>Room}",
+            "stop playing at {bedroom:=>Room}",
+            "stop playing at {everywhere:=>Room}"
+          ],
+          "slots": [
+              {
+                "name": "Room",
+                "required": false,
+                "type": "Psp/Room",
+                "missingQuestion": ""
+              }
+          ]
+        },
+        {
+          "name": "moveStreamTo",
+          "enabledByDefault": true,
+          "utterances": [
+            "move to {outdoor:=>Room}",
+            "move to {lounge:=>Room}",
+            "move to {kitchen:=>Room}",
+            "move to {office:=>Room}",
+            "move to {bedroom:=>Room}",
+            "move to {everywhere:=>Room}",
+            "move to {all:=>Room}",
+            "move to {laundry:=>Room}",
+            "move to {base:=>Room}"
+          ],
+          "slots": [
+              {
+                "name": "Room",
+                "required": false,
+                "type": "Psp/Room",
+                "missingQuestion": ""
+              }
+          ]
+        }
+  ]
+}

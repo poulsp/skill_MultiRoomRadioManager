@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %>
+</head>
+<body>
+  <div style="color:#fff;background-color:#26316D;padding-top: 0em;padding-right: 0px;padding-bottom: 0em;padding-left: 0px;;height:390px">
+  <div class="w3-bar">
+      <div id="main">
+        <h5>&nbsp
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('stop/<%- deviceUid%>')">Stop radio</a>
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('volumeUp')">Volume up</a>
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('volumeDown')">Volume down</a>
+<!--
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('speakerOn/<%- deviceUid%>')">Speaker On</a>
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('speakerOff/<%- deviceUid%>')">Speaker Off</a>
+-->
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('mute/<%- deviceUid%>%>')">Mute</a>
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('unmute/<%- deviceUid%>')">Unmute</a>
+
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('dnd')">DND</a>
+            <a href="#" class="w3-bar-item w3-button w3-khaki w3-border border-blue w3-round w3-tiny" style="margin:2px; margin-left:10px" onclick="loadRadio('cancel_dnd')">Cancel DND</a>
+
+        </h5>
+          <div class="w3-responsive">
+            <div class="tableFixHead">
+              <table id="customers" >
+                <thead>
+                  <tr>
+                    <th id="th0">Radio</th>
+                    <th id="th1">Description</th>
+                    <th id="th2">volume</th>
+                    <th id="th3">online</th>
+                    <th id="th4"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% tableRowData.forEach(function (value) { %>
+                      <%-value%>
+                    <% }) %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+</body>
+<% include partials/script %>
+</html>

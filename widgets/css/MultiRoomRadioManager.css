@@ -1,0 +1,73 @@
+.MultiRoomRadioManager {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+
+.MultiRoomRadioManager_radio {
+  display: none;
+	width: 690px;
+	height: 450px;
+}
+
+.smiley {
+	font-size: 0.6em;
+}
+
+h1, .MultiRoomRadioManager_explanation {
+	color: #FF4000;
+	font-size: 28px;
+	font-family: 'Signika',	sans-serif;
+	line-height: 0.3;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+
+.blinking {
+	color: red;
+	width: 20%;
+	height: 20%;
+	font-size: 14px;
+	font-family: 'Signika',	sans-serif;
+	line-height: 0.3;
+	padding-bottom: 0px;
+	/*align: center;*/
+	margin: auto;
+  -webkit-animation: blinkRed 3.0s infinite;
+}
+
+
+.blink_me {
+	color: #00FFFF;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.MultiRoomRadioManager_explanation.p {
+	color: #FFFF80;
+	font-family: 'Helvetica Neue',	sans-serif; font-size: 14px;
+	line-height: 1.3;
+	margin: 0 0 0 0;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.MultiRoomRadioManager_explanation {
+  display: none;
+}
+
+.MultiRoomRadioManager_img {
+  display: none;
+	width: 100%;
+	height: 100%;"
+}
+

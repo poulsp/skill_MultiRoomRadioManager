@@ -1,0 +1,45 @@
+{
+	"playEverywhereAsDefault": {
+		"defaultValue": true,
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "Play the stream in all rooms."
+	},
+	"rooms": {
+		"defaultValue": "base, kitchen,office",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "In which rooms you have a media/radio players. Comma separated",
+		"onUpdate": "setRooms"
+	},
+	"autoRemoveNodejs"	: {
+		"defaultValue": false,
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "If you have not installed node js before, we can remove it again when you remove the skill from webui.  if you wish."
+	},
+	"webRadioManagerPort"	: {
+		"defaultValue": "4000",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "The port where the web RadioManager must run. default: 4000."
+	},
+	"startWebRadioManagerwidget"	: {
+		"defaultValue": true,
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "You can choose not to show and run the RadioManager in the widget."
+	},
+	"widgetSizeH": {
+		"defaultValue": 468,
+		"dataType": "integer",
+		"isSensitive": false,
+		"description": "Widget size height in pixels."
+	},
+	"widgetSizeW": {
+		"defaultValue": 700,
+		"dataType": "integer",
+		"isSensitive": false,
+		"description": "Widget size width in pixels."
+	}
+}
