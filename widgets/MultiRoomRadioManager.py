@@ -9,8 +9,10 @@ from core.webui.model.WidgetSizes import WidgetSizes
 
 class MultiRoomRadioManager(Widget):
 
-	DEFAULT_SIZE = WidgetSizes.w_small_wide
-	#DEFAULT_SIZE = WidgetSizes.w_extralarge_wide
+	# w_extralarge_wide: 700x500
+
+	#DEFAULT_SIZE = WidgetSizes.w_small_wide
+	DEFAULT_SIZE = WidgetSizes.w_extralarge_wide
 	DEFAULT_OPTIONS: dict = dict()
 
 	def __init__(self, data: sqlite3.Row):
@@ -19,13 +21,19 @@ class MultiRoomRadioManager(Widget):
 		if self.settings:
 			self.settings['title'] = False
 			self.settings['borders'] = False
-			self.w = self.skillInstance.getConfig('widgetSizeW')
-			self.h = self.skillInstance.getConfig('widgetSizeH')
-
 			# self.w = 700
 			# self.h = 468
 
+			self.w = 650
+			self.h = 452
 
+#			self.w = self.skillInstance.getConfig('widgetSizeW')
+#			self.h = self.skillInstance.getConfig('widgetSizeH')
+
+			# self.w = 700
+			# self.h = 468
+# 639
+# 452
 	#-----------------------------------------------
 	def baseData(self) -> dict:
 		webRadioManagerPort = self.skillInstance.getConfig('webRadioManagerPort')

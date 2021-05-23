@@ -1,5 +1,8 @@
 radio No, Description spoken in speaker, url, start volume in%, online
+# Don't delete the line above.
+# Blank lines shall have # in front like this. No blank lines with just a new line.
 # https://www.youtube.com/watch?v=yzVf8wdUQ5U Online FM Radio Streaming Links | How to Find the Stream URL of Online Radio Stations
+#
 "radio 1","Rockabilly Radio",                     35,"http://209.9.238.6:6042", True
 "radio 2","The krush, fm 95.9",                   40,"http://17853.live.streamtheworld.com/KRSHFMAAC.aac", True
 "radio 3","CLASSIC ROCK RADIO HD",                30,"http://us5.internet-radio.com:8267/listen.pls", False
@@ -18,23 +21,36 @@ radio No, Description spoken in speaker, url, start volume in%, online
 "radio 16","1.FM - Classic Country",              35,"http://185.33.21.112:80/ccountry_128", True
 "radio 17","Hope Radio Ireland - Top 40 Oldies",  35,"http://162.216.17.221:8110/stream", True
 "radio 18","Dixieland-Oasis",                     35,"http://ca8.rcast.net:8018", True
-"radio 19","Radio Austral",                       35,"http://radioaustral.serverroom.us:8516/stream/1/", True
-"radio 20","ABC Radio Australian",                35,"https://live-radio01.mediahubaustralia.com/RAEW/mp3/", True
-"radio 21","ABC Radio (Brisbane)",                40,"https://live-radio01.mediahubaustralia.com/4LRW/mp3/", True
-"radio 22","kiss FM Australian",                  35,"http://cc.net2streams.com:8565/kissfm.mp3", True
-"radio 23","Radio Pilatus Schweiz",               35,"https://radiopilatus.ice.infomaniak.ch/pilatus192.mp3", True
-"radio 24","Bandit Rock Sweden",                  35,"https://fm02-ice.stream.khz.se/fm02_mp3?platform=web", True
-"radio 25","Vinyl godis Sweden",                  35,"https://securestreams2.autopo.st:1061/stream//1/", True
-"radio 26","Guldkanalen 70-tal Sweden",           30,"http://stream.dbmedia.se/gk70tal96", True
-"radio 27","Guldkanalen 80-tal Sweden",           30,"http://stream.dbmedia.se/gk80talMP3", True
-"radio 28","Guldkanalen 90-tal Sweden",           30,"http://stream.dbmedia.se/gk90talMP3", True
-"radio 29","Spektra FM (Valencia) Spain",         35,"https://stm2.emiteonline.com:9008/spektrafm", True
-"radio 30","esRadio Spain",                       35,"https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-low.mp3", True
-"radio 31","Raggakings Radio FM Jamaica",         35,"https://raggakings.radio:8443/stream.ogg", True
-"radio 32","Go Figure Radio Jamaica",             35,"https://ny.mysonicserver.com/8038/stream", True
+"radio 19","Radio Caprice Dixieland",             50,"http://79.120.39.202:9039", True
+"radio 20","Radio Austral",                       35,"http://radioaustral.serverroom.us:8516/stream/1/", True
+"radio 21","ABC Radio Australian",                35,"https://live-radio01.mediahubaustralia.com/RAEW/mp3/", True
+"radio 22","ABC Radio (Brisbane)",                40,"https://live-radio01.mediahubaustralia.com/4LRW/mp3/", True
+"radio 23","kiss FM Australian",                  35,"http://cc.net2streams.com:8565/kissfm.mp3", True
+"radio 24","Radio Pilatus Schweiz",               35,"https://radiopilatus.ice.infomaniak.ch/pilatus192.mp3", True
+"radio 25","Bandit Rock Sweden",                  35,"https://fm02-ice.stream.khz.se/fm02_mp3?platform=web", True
+"radio 26","Vinyl godis Sweden",                  35,"https://securestreams2.autopo.st:1061/stream//1/", True
+"radio 27","Guldkanalen 70-tal Sweden",           30,"http://stream.dbmedia.se/gk70tal96", True
+"radio 28","Guldkanalen 80-tal Sweden",           30,"http://stream.dbmedia.se/gk80talMP3", True
+"radio 29","Guldkanalen 90-tal Sweden",           30,"http://stream.dbmedia.se/gk90talMP3", True
+"radio 30","Spektra FM (Valencia) Spain",         35,"https://stm2.emiteonline.com:9008/spektrafm", True
+"radio 31","esRadio Spain",                       35,"https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-low.mp3", True
+"radio 32","Raggakings Radio FM Jamaica",         35,"https://raggakings.radio:8443/stream.ogg", True
+"radio 33","Go Figure Radio Jamaica",             35,"https://ny.mysonicserver.com/8038/stream", True
 "radio 34","East Coast FM Ireland",               35,"https://stream.audioxi.com/EASTCOAST", True
 "radio 35","100% NL Party",                       30,"http://stream.radiocorp.nl/100pnl_feest_mp3", True
 "radio 36","100% NL",                             30,"http://stream.100p.nl/100pctnl.mp3", True
+"radio 37","BBC Radio 1",                         35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_one", True
+"radio 38","BBC Radio 2",                         35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_two", True
+"radio 39","BBC Radio 3",                         35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_three", True
+"radio 40","BBC Radio 4",                         35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm", True
+"radio 41","BBC Radio 4 exstra",                  35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra", True
+"radio 42","BBC Radio 5 live",                    35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk", True
+"radio 43","BBC Radio 6 music",                   35,"https://stream.live.vc.bbcmedia.co.uk/bbc_6music", True
+"radio 44","BBC World Service",                   35,"https://stream.live.vc.bbcmedia.co.uk/bbc_world_service", True
+"radio 45","Jazz FM UK",                          35,"https://stream-al.planetradio.co.uk/jazz.mp3", True
+"radio 46","Classic FM UK",                       35,"https://media-ice.musicradio.com/ClassicFMMP3", True
+"radio 47","BBC Radio Scotland",                  35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_fm", True
+"radio 48","Jazz Radio France",                   35,"https://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3", True
 #
 # New lines must have a # in front, no normal new lines in this file.
 # "radio xx","",                      35,"", True

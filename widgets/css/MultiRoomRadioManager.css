@@ -8,8 +8,8 @@
 
 .MultiRoomRadioManager_radio {
   display: none;
-	width: 690px;
-	height: 450px;
+	width: 100%;
+	height: 100%;
 }
 
 .smiley {
@@ -63,6 +63,9 @@ h1, .MultiRoomRadioManager_explanation {
 
 .MultiRoomRadioManager_explanation {
   display: none;
+	width: 100%;
+	height: 100%;
+
 }
 
 .MultiRoomRadioManager_img {

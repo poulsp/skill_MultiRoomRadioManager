@@ -32,8 +32,8 @@ class MultiRoomRadioManager_MultiRoomRadioManager extends Widget {
 			})
 			.then((res) => res.json())
 			.then((data) => {
-				this.webRadioManagerPort = data.data.webRadioManagerPort
-				this.siteIsUp          = data.data.siteIsUp
+				this.webRadioManagerPort 	= data.data.webRadioManagerPort
+				this.siteIsUp		          = data.data.siteIsUp
 			})
 			.then(() => this.checkRadioWidgetDisplay())
 	}
