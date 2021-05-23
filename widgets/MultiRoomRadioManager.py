@@ -21,7 +21,7 @@ class MultiRoomRadioManager(Widget):
 		if self.settings:
 			self.settings['title'] = False
 			self.settings['borders'] = False
-			self.w = 650
+			self.w = 585
 			self.h = 452
 
 			# self.w = 700
