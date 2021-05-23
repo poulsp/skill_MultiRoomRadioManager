@@ -14,6 +14,7 @@ process.env.NODE_ENV = 'development';
 const config = require('./config/config.js');
 */
 
+var indexRouter = require('./routes/index');
 var radioRouter = require('./routes/radio');
 
 var app = express();
@@ -29,6 +30,7 @@ app.use(cookieParser());
 // set path for static assets
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', indexRouter);
 app.use('/', radioRouter);
 
 // catch 404 and forward to error handler

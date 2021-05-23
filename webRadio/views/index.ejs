@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<% include partials/head %>
+<link rel="stylesheet" href="./stylesheets/indexstyle.css">
+
+</head>
+<body>
+
+	<div id="fullheight" class="w3-container" style="height:390px">
+<!--    <####%## include partials/menu ##%> -->
+	  <div class="w3-bar">
+		  <div id="main">
+				<div class="float-container ">
+
+				    <div class="float-child left">
+			 					<iframe name="frameRadio" src="<%=radioUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-radio"></iframe>
+				    </div>
+
+				    <div class="float-child right">
+			 					<iframe name="framevolumecontrol" src="<%=volumeUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-volume"></iframe>
+				    </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+  <%# include partials/script %>
+</html>

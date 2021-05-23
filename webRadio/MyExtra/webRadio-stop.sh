@@ -14,5 +14,5 @@ cd $DIR/../
 #Find process id pid and kill
 #PID=`ps ax|grep  "node.*bin/www"|grep -v "grep"|awk '{print $1}'`
 #echo $"$PID"
-#kill -2 $(ps ax|grep  "node.*bin/www"|grep -v "grep"|awk '{print $1}') > /dev/null 2>&1
+kill -2 $(ps ax|grep  "node.*bin/www"|grep -v "grep"|awk '{print $1}') > /dev/null 2>&1
 

@@ -1,0 +1,16 @@
+.float-container {}
+
+.float-child {
+	color: white;
+  float: left;
+	height: 600px;
+}
+
+.float-child.left {
+  width: 67%;
+}
+
+.float-child.right {
+  width: 30%;
+}
+
