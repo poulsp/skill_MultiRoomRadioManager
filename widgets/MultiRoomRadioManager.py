@@ -21,19 +21,13 @@ class MultiRoomRadioManager(Widget):
 		if self.settings:
 			self.settings['title'] = False
 			self.settings['borders'] = False
-			# self.w = 700
-			# self.h = 468
-
 			self.w = 650
 			self.h = 452
 
-#			self.w = self.skillInstance.getConfig('widgetSizeW')
-#			self.h = self.skillInstance.getConfig('widgetSizeH')
-
 			# self.w = 700
 			# self.h = 468
-# 639
-# 452
+
+
 	#-----------------------------------------------
 	def baseData(self) -> dict:
 		webRadioManagerPort = self.skillInstance.getConfig('webRadioManagerPort')
