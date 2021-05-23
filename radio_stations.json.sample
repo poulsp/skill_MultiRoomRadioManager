@@ -60,9 +60,9 @@
     true
   ],
   "radio 19": [
-    "Radio Austral",
-    "35%",
-    "http://radioaustral.serverroom.us:8516/stream/1/",
+    "Radio Caprice Dixieland",
+    "50%",
+    "http://79.120.39.202:9039",
     true
   ],
   "radio 2": [
@@ -72,63 +72,63 @@
     true
   ],
   "radio 20": [
+    "Radio Austral",
+    "35%",
+    "http://radioaustral.serverroom.us:8516/stream/1/",
+    true
+  ],
+  "radio 21": [
     "ABC Radio Australian",
     "35%",
     "https://live-radio01.mediahubaustralia.com/RAEW/mp3/",
     true
   ],
-  "radio 21": [
+  "radio 22": [
     "ABC Radio (Brisbane)",
     "40%",
     "https://live-radio01.mediahubaustralia.com/4LRW/mp3/",
     true
   ],
-  "radio 22": [
+  "radio 23": [
     "kiss FM Australian",
     "35%",
     "http://cc.net2streams.com:8565/kissfm.mp3",
     true
   ],
-  "radio 23": [
+  "radio 24": [
     "Radio Pilatus Schweiz",
     "35%",
     "https://radiopilatus.ice.infomaniak.ch/pilatus192.mp3",
     true
   ],
-  "radio 24": [
+  "radio 25": [
     "Bandit Rock Sweden",
     "35%",
     "https://fm02-ice.stream.khz.se/fm02_mp3?platform=web",
     true
   ],
-  "radio 25": [
+  "radio 26": [
     "Vinyl godis Sweden",
     "35%",
     "https://securestreams2.autopo.st:1061/stream//1/",
     true
   ],
-  "radio 26": [
+  "radio 27": [
     "Guldkanalen 70-tal Sweden",
     "30%",
     "http://stream.dbmedia.se/gk70tal96",
     true
   ],
-  "radio 27": [
+  "radio 28": [
     "Guldkanalen 80-tal Sweden",
     "30%",
     "http://stream.dbmedia.se/gk80talMP3",
     true
   ],
-  "radio 28": [
+  "radio 29": [
     "Guldkanalen 90-tal Sweden",
     "30%",
     "http://stream.dbmedia.se/gk90talMP3",
-    true
-  ],
-  "radio 29": [
-    "Spektra FM (Valencia) Spain",
-    "35%",
-    "https://stm2.emiteonline.com:9008/spektrafm",
     true
   ],
   "radio 3": [
@@ -138,18 +138,24 @@
     false
   ],
   "radio 30": [
+    "Spektra FM (Valencia) Spain",
+    "35%",
+    "https://stm2.emiteonline.com:9008/spektrafm",
+    true
+  ],
+  "radio 31": [
     "esRadio Spain",
     "35%",
     "https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-low.mp3",
     true
   ],
-  "radio 31": [
+  "radio 32": [
     "Raggakings Radio FM Jamaica",
     "35%",
     "https://raggakings.radio:8443/stream.ogg",
     true
   ],
-  "radio 32": [
+  "radio 33": [
     "Go Figure Radio Jamaica",
     "35%",
     "https://ny.mysonicserver.com/8038/stream",
@@ -173,10 +179,82 @@
     "http://stream.100p.nl/100pctnl.mp3",
     true
   ],
+  "radio 37": [
+    "BBC Radio 1",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_one",
+    true
+  ],
+  "radio 38": [
+    "BBC Radio 2",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_two",
+    true
+  ],
+  "radio 39": [
+    "BBC Radio 3",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_three",
+    true
+  ],
   "radio 4": [
     "Velvet 96.8",
     "35%",
     "http://s10.voscast.com:9942",
+    true
+  ],
+  "radio 40": [
+    "BBC Radio 4",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm",
+    true
+  ],
+  "radio 41": [
+    "BBC Radio 4 exstra",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra",
+    true
+  ],
+  "radio 42": [
+    "BBC Radio 5 live",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk",
+    true
+  ],
+  "radio 43": [
+    "BBC Radio 6 music",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_6music",
+    true
+  ],
+  "radio 44": [
+    "BBC World Service",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    true
+  ],
+  "radio 45": [
+    "Jazz FM UK",
+    "35%",
+    "https://stream-al.planetradio.co.uk/jazz.mp3",
+    true
+  ],
+  "radio 46": [
+    "Classic FM UK",
+    "35%",
+    "https://media-ice.musicradio.com/ClassicFMMP3",
+    true
+  ],
+  "radio 47": [
+    "BBC Radio Scotland",
+    "35%",
+    "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_fm",
+    true
+  ],
+  "radio 48": [
+    "Jazz Radio France",
+    "35%",
+    "https://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3",
     true
   ],
   "radio 5": [
