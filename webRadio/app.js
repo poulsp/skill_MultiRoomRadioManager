@@ -50,7 +50,7 @@ app.use(function(err, req, res, next) {
 });
 
 //_RADIOMANAGER_WIDGET_REFRESH = 'psp/radiomanager/widget/refresh'
-require('./helpers/myHelper.js').send2RadioManagerWidget('psp/radiomanager/widget/refresh', 'start external webserver ')
+require('./helpers/myHelper.js').send2RadioManagerWidget('psp/radiomanager/widget/refresh', 'WebRadioStart')
 
 
 module.exports = app;

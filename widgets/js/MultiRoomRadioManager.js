@@ -13,6 +13,9 @@ class MultiRoomRadioManager_MultiRoomRadioManager extends Widget {
 		this.myExplanationDiv = document.querySelector(`[data-ref="MultiRoomRadioManager_explanation_${this.uid}"]`)
 		this.smileyImg = document.querySelector(`[data-ref="MultiRoomRadioManager_smiley_img_${this.uid}"]`)
 		this.myImg = document.querySelector(`[data-ref="MultiRoomRadioManager_img_${this.uid}"]`)
+		this.smileyImg.src = `http://${window.location.hostname}:5001/api/v1.0.1/widgets/resources/img/MultiRoomRadioManager/smiley.png`
+		this.myImg.src = `http://${window.location.hostname}:5001/api/v1.0.1/widgets/resources/img/MultiRoomRadioManager/MultiRoomRadioManagerWidget.png`
+
 		this.getBaseData()
 
 		this.subscribe('psp/radiomanager/widget/refresh', this.getBaseData)
@@ -43,18 +46,12 @@ class MultiRoomRadioManager_MultiRoomRadioManager extends Widget {
 	checkRadioWidgetDisplay() {
 		if (this.siteIsUp) {
 			this.myExplanationDiv.style.display = "none";
-			this.smileyImg.display = "none";
-			this.myImg.style.display = "none";
 			this.myIframe.style.display = "block";
 
 			this.showSiteRadioTable()
 		}
 		else {
 			this.myIframe.style.display = "none";
-			this.smileyImg.src = `http://${window.location.hostname}:5001/api/v1.0.1/widgets/resources/img/MultiRoomRadioManager/smiley.png`
-			this.myImg.src = `http://${window.location.hostname}:5001/api/v1.0.1/widgets/resources/img/MultiRoomRadioManager/MultiRoomRadioManagerWidget.png`
-			this.smileyImg.display = "block";
-			this.myImg.style.display = "block";
 			this.myExplanationDiv.style.display = "block";
 		}
 	}

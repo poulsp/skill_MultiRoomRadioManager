@@ -1,8 +1,22 @@
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<!-- <script src="./javascripts/menu.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script> -->
+
+<script src="./javascripts/mqttws31.min.js"></script>
+<script src="./javascripts/my-mqttws.js"></script>
+
 <script>
+//-----------------------------------------------
 function loadRadio(station) {
+	getXttp(`/radio/${station}`)
+}
+
+//-----------------------------------------------
+function reloadPage() {
+	window.location.reload();
+}
+
+
+//-----------------------------------------------
+function 	getXttp(param) {
   var xhttp = new XMLHttpRequest();
 /*
   xhttp.onreadystatechange = function() {
@@ -11,7 +25,20 @@ function loadRadio(station) {
     }
   };
 */
-  xhttp.open("GET", `/radio/${station}`, true);
+	let paramStr = param.substring(0, 7)
+	console.warn(`Vis sub string: ${paramStr}`)
+ 	if (paramStr == '/radio/') {
+ 		xhttp.onreadystatechange = function() {
+  	  if (this.readyState == 4 && this.status == 200) {
+ 				console.warn(`Before ${document.getElementById("station-playing").innerHTML}`);
+
+    		document.getElementById("station-playing").innerHTML = this.responseText;
+		 		console.warn(`After ${document.getElementById("station-playing").innerHTML}`);
+    	}
+ 		}
+	}
+
+  xhttp.open("GET", param, true);
   xhttp.send();
 }
 </script>

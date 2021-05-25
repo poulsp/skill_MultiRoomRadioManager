@@ -190,7 +190,7 @@ class MultiRoomRadioManager(AliceSkill):
 		with open('./skills/MultiRoomRadioManager/radio_stations.json', 'w') as json_file:
 			json.dump(radioList, json_file, sort_keys=True, indent=2 )
 
-		self.publish(_RADIOMANAGER_WIDGET_REFRESH, json.dumps('dummy'))
+		self.publish(_RADIOMANAGER_WIDGET_REFRESH, 'dummy')
 
 
 	#-----------------------------------------------

@@ -81,7 +81,7 @@ router.get('/radio/volumeDown', function(req, res, next) {
 //-----------------------------------------------
 // GET Stop playing.
 router.get('/radio/stop/:deviceUid', function(req, res, next) {
-  send2AliceApi('stop radio', req.params['deviceUid'], '', req, res, next)
+  send2AliceApi('stop radio', req.params['deviceUid'], 'stop', req, res, next)
 })
 
 //-----------------------------------------------
@@ -97,8 +97,9 @@ router.get('/radio/:station/:everywhere/:deviceUid', function(req, res, next) {
   }
   else
     query = `play radio ${station}`
-
-  send2AliceApi(query, req.params['deviceUid'], '', req, res, next)
+  console.log(`station: ${station}`)
+  //send2AliceApi(query, req.params['deviceUid'], '', req, res, next)
+	send2AliceApi(query, req.params['deviceUid'], `${station}`, req, res, next)
 })
 
 

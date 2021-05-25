@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
 	<% include partials/head %>
-	<link rel="stylesheet" href="./stylesheets/indexstyle.css">
 </head>
-<body>
-
+<body onload="startMqtt()">
 	<div id="fullheight" class="w3-container" style="height:390px">
 	  <div class="w3-bar">
 		  <div id="main">
-				<div class="float-container ">
-
-				    <div class="float-child left">
-			 					<iframe name="frameRadio" src="<%=radioUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-radio"></iframe>
-				    </div>
-
-				    <div class="float-child right">
-			 					<iframe name="framevolumecontrol" src="<%=volumeUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-volume"></iframe>
-				    </div>
+		  	<div class="RadioServerDown">
+		  		<h2>
+					<h3 class="blink_me">RadioManager webserver down</h3>
+					<br>
+					<br>
+					<p>I have the same feelings as you have.</p>
+					<p >I'm also anxiously waiting for Alice to come back here and play with the rest of us.</p>
+	  		</div>
+				<div class="float-container">
+			    <div class="float-child left">
+		 					<iframe  src="<%=radioUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-radio"></iframe>
+			    </div>
+			    <div class="float-child right">
+	 					<iframe name="framevolumecontrol" src="<%=volumeUrl %>" width="100%" height="100%" frameborder="0" scrolling="yes" class="frame-volume" data-ref="frame-volume"></iframe>
+			    </div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
-
 </body>
-  <%# include partials/script %>
+ <% include partials/script %>
 </html>

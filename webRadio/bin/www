@@ -121,7 +121,7 @@ function sendStop2RadioManager() {
 
   reEntrance =true
   // _RADIOMANAGER_WIDGET_REFRESH = 'psp/radiomanager/widget/refresh'
-  require('../helpers/myHelper.js').send2RadioManagerWidget('psp/radiomanager/widget/refresh', 'HTTP server closing.')
+  require('../helpers/myHelper.js').send2RadioManagerWidget('psp/radiomanager/widget/refresh', 'WebRadioStop')
 }
 
 process.on('SIGINT', () => {

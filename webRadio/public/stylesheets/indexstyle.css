@@ -1,4 +1,24 @@
-.float-container {}
+.RadioServerDown {
+	display: none;
+	text-align: center;
+}
+
+
+.blink_me {
+	color: #00FFFF;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.float-container {
+	display: block;
+
+}
 
 .float-child {
 	color: white;
@@ -13,4 +33,3 @@
 .float-child.right {
   width: 30%;
 }
-

@@ -1,7 +1,7 @@
 radio No, Description spoken in speaker, url, start volume in%, online
 # Don't delete the line above.
 # Blank lines shall have # in front like this. No blank lines with just a new line.
-# https://www.youtube.com/watch?v=yzVf8wdUQ5U Online FM Radio Streaming Links | How to Find the Stream URL of Online Radio Stations
+# https://www.youtube.com/watch?v=yzVf8wdUQ5U # Online FM Radio Streaming Links | How to Find the Stream URL of Online Radio Stations
 #
 "radio 1","Rockabilly Radio",                     35,"http://209.9.238.6:6042", True
 "radio 2","The krush, fm 95.9",                   40,"http://17853.live.streamtheworld.com/KRSHFMAAC.aac", True
@@ -51,10 +51,32 @@ radio No, Description spoken in speaker, url, start volume in%, online
 "radio 46","Classic FM UK",                       35,"https://media-ice.musicradio.com/ClassicFMMP3", True
 "radio 47","BBC Radio Scotland",                  35,"https://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_fm", True
 "radio 48","Jazz Radio France",                   35,"https://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3", True
+"radio 49","WDR 1 live Germany",                  35,"https://wdr-edge-301b-dus-ts-cdn.cast.addradio.de/wdr/1live/live/mp3/128/stream.mp3", True
+"radio 50","WDR 2 Germany",                       35,"https://wdr-edge-201d-dus-lg-cdn.cast.addradio.de/wdr/wdr2/ruhrgebiet/mp3/128/stream.mp3", True
+"radio 51","WDR 4 Germany",                       35,"https://wdr-edge-301d-dus-ts-cdn.cast.addradio.de/wdr/wdr4/live/mp3/128/stream.mp3", True
+"radio 52","WDR 5 Germany",                       35,"https://wdr-edge-201f-fra-lg-cdn.cast.addradio.de/wdr/wdr5/live/mp3/128/stream.mp3", True
+"radio 53","Bayern 1 Germany",                    35,"https://br-edge-3008-dus-ts-cdn.cast.addradio.de/br/br1/obb/mp3/mid", True
+"radio 54","atenna bayern Germany",               35,"https://s3-webradio.webradio.de/antenne", True
+"radio 55","Radio HR1  Germany",                  35,"https://hr-edge-304d-dus-ts-cdn.cast.addradio.de/hr/hr1/live/mp3/128/stream.mp3", True
+"radio 56","Radio HR3  Germany",                  35,"https://hr-edge-2052-fra-lg-cdn.cast.addradio.de/hr/hr3/live/mp3/128/stream.mp3", True
+"radio 57","NDR 2 (Hamburg) Germany",             35,"https://ndr-edge-30ad-fra-ts-cdn.cast.addradio.de/ndr/ndr2/niedersachsen/mp3/128/stream.mp3", True
+"radio 58","BOB Live-Stream national",            35,"https://bob.hoerradar.de/radiobob-national-mp3-hq", True
+"radio 59","Deutschlandfunk news - talk",         35,"http://dradio-edge-3091-dus-ts-cdn.cast.addradio.de/dradio/dlf/live/mp3/128/stream.mp3", True
+"radio 60","Deutschlandfunk Kultur",              35,"https://dradio-edge-3099-dus-ts-cdn.cast.addradio.de/dradio/kultur/live/mp3/128/stream.mp3", True
+"radio 61","Deutschlandradio - Dokumente und Debatten", 35,"https://dradio-edge-20af-fra-lg-cdn.cast.addradio.de/dradio/dokdeb/live/mp3/64/stream.mp3", True
+"radio 62","WGBH",                                35,"https://streams.audio.wgbh.org:8200/wgbh-aac", True
+"radio 63","Jazz 24/7 (Boston)",                  35,"https://streams.audio.wgbh.org:8117/Jazz24-7", True
+"radio 64","B 101 Fm Wfeb",                       35,"https://us2.maindigitalstream.com/ssl/WFEB", True
+"radio 65","Lite Rock 105 (Rhode Island)",         35,"https://22073.live.streamtheworld.com/WWLIFMAAC_SC?dist=onlineradiobox", True
 #
+#
+# "radio xx","",                      35,"", True
+# "radio xx","",                      35,"", True
+# "radio xx","",                      35,"", True
+# "radio xx","",                      35,"", True
+# "radio xx","",                      35,"", True
+# "radio xx","",                      35,"", True
 # New lines must have a # in front, no normal new lines in this file.
-# "radio xx","",                      35,"", True
-# "radio xx","",                      35,"", True
 # "radio xx","",                      35,"", True
 # "radio xx","",                      35,"", True
 # "radio xx","",                      35,"", True

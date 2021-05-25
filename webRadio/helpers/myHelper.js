@@ -52,7 +52,16 @@ function send2AliceApi(query, deviceUid, redirection, req, res, next) {
 
   request(options, function (error, response) {
     if (error) throw new Error(error)
-    res.redirect(redirection)
+    	// Vi skal beskrive, hvad der foregår. Tja vi prøver at vise, hvilken station der spilles nu.
+      if (Number.isInteger(parseInt(redirection))) {
+        res.send(redirection)
+      }
+			else if (redirection == 'stop') {
+        res.send(' ')
+			}
+      else {
+        res.redirect(redirection)
+      }
   })
 }
 
