@@ -15,8 +15,13 @@ Manage internet radio stations and players in the synchronous multiroom audio sy
 
 This skill requires and depends on the skill [MultiRoomMediaVolume](https://github.com/poulsp/skill_MultiRoomMediaVolume).
 You also need the standalone [PspMultiRoomPlayer](https://github.com/poulsp/PspMultiRoomPlayer).
+But you can test if the system work with the built-in web player in the MultiRoomMediaVolume widget, without the PspMultiRoomPlayer running.
+
 
 You can create a widget in menupoint "WIDGET" with where you can list/play/stop stations.
+
+
+![alt text](https://github.com/poulsp/skill_MultiRoomRadioManager/blob/master/widgets/img/MultiRoomRadioManagerWidget.png?raw=true)
 
 You play a radio station with voice by saying e.g "radio 14" and the responses from alice "Tuning in to radio 14, 1.FM - Blues." and stop it by saying  "stop radio".
 
@@ -65,4 +70,3 @@ git clone https://github.com/poulsp/skill_MultiRoomRadioManager MultiRoomRadioMa
 
 
 Use the [PspMultiRoomPlayer](https://github.com/poulsp/PspMultiRoomPlayer) to play the actual sound/music
-But you don’t need that for testing if the radio works. There is a built-in web player in the MultiRoomMediaVolume widget.
