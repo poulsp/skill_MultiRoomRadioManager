@@ -2,6 +2,7 @@ radio No, Description spoken in speaker, url, start volume in%, online
 # Don't delete the line above.
 # Blank lines shall have # in front like this. No blank lines with just a new line.
 # https://www.youtube.com/watch?v=yzVf8wdUQ5U # Online FM Radio Streaming Links | How to Find the Stream URL of Online Radio Stations
+# https://onlineradiobox.com/ # To find free radiostations.
 #
 "radio 1","Rockabilly Radio",                     35,"http://209.9.238.6:6042", True
 "radio 2","The krush, fm 95.9",                   40,"http://17853.live.streamtheworld.com/KRSHFMAAC.aac", True
