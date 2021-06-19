@@ -29,5 +29,20 @@
 		"dataType": "boolean",
 		"isSensitive": false,
 		"description": "You can choose not to show and run the RadioManager in the widget."
+	},
+	"sendOutWhiteNoise": {
+		"defaultValue": "snapcast",
+		"defaultValue": false,
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "Send out noise to adjust volume level between players/speakers.",
+		"onUpdate": "setOutSendWhiteNoise"
+	},
+	"mixerLevel4Noise": {
+		"defaultValue": 50,
+		"dataType": "integer",
+		"isSensitive": false,
+		"description": "Setting the volume level when sending white noise out on the lan."
 	}
+
 }

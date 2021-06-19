@@ -1,3 +1,21 @@
+#  Copyright (c) 2021 Poul Spang
+#
+#  This file, MultiRoomRadioManager.py, is part of Project skill_MultiRoomRadioManager.
+#
+#  Project skill_MultiRoomRadioManager is free software: you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program.  If not, see <https://www.gnu.org/licenses/>
+
+
 # ~/.local/bin/projectalice-sk validate --paths ~/ProjectAlice/skills/MultiRoomRadioManager
 
 import requests
@@ -62,6 +80,9 @@ class MultiRoomRadioManager(AliceSkill):
 		self._playing           = False
 		self._rooms             = list()
 		self.playEverywhereAsDefault = False
+		self._sendOutWhiteNoise = False
+		self._sendingWhiteNoise = False
+
 		#TODO Get Speaker work again.
 		self.speaker = None
 		#self._speaker = Speaker()
@@ -98,6 +119,19 @@ class MultiRoomRadioManager(AliceSkill):
 
 		# Delete all duplicates
 		self._rooms = list(dict.fromkeys(self._rooms))
+
+		self._sendingWhiteNoise = False
+		self._sendOutWhiteNoise = self.getConfig('sendOutWhiteNoise')
+		if (self._sendOutWhiteNoise):
+			# Write self._sendOutWhiteNoise back to config set to False
+			try:
+				self.ConfigManager.updateSkillConfigurationFile('MultiRoomRadioManager', 'sendOutWhiteNoise', 'false')
+			except Exception as e:
+				raise e
+
+			self._sendOutWhiteNoise = False
+
+
 
 		self._ffMpegNamedpipe = "/dev/shm/snapfifo"
 
@@ -265,6 +299,10 @@ class MultiRoomRadioManager(AliceSkill):
 	#-----------------------------------------------
 	@IntentHandler('playRadio')
 	def playRadio(self, session: DialogSession, **_kwargs):
+		if self._sendOutWhiteNoise:
+			self.endDialog(session.sessionId, '')
+			return
+
 		thisSideId = self._baseServer
 		try:
 			station  = None if 'Station' not in session.slots else session.slotValue('Station')
@@ -458,3 +496,48 @@ class MultiRoomRadioManager(AliceSkill):
 		self.endDialog(sessionId, self.randomTalk(errSlot))
 
 
+	#-----------------------------------------------
+	def _doStopSendNoise(self):
+		# self.logDebug(f"Going into _stopSendNoise ")
+		try:
+			cmd = '/usr/bin/killall cat >/dev/null 2>&1'
+			subprocess.call(cmd, shell=True)
+		except Exception as e:
+			self.logDebug(f"Exceptionas: {e} ")
+
+		self._stop()
+		self._sendingWhiteNoise_sendingNoise = False
+		try:
+			self.ConfigManager.updateSkillConfigurationFile('MultiRoomRadioManager', 'sendOutWhiteNoise', 'False')
+		except Exception as e:
+			raise e
+
+
+
+	#-----------------------------------------------
+	def _doSendWhiteNoise(self):
+		# self.logDebug(f"Going into _doSendWhiteNoise ")
+
+		mixerLevel4Noise = self.getConfig('mixerLevel4Noise')
+		self._sendingWhiteNoise = True
+		self.publish(_MULTIROOM_ENTRY_VOLUME, json.dumps({'activeSoundApp': self.name,'stationVolume': str(mixerLevel4Noise)}))
+		self.publish(_MULTIROOM_PLAYER_PLAY, json.dumps({'siteId': 'WhiteNoise', 'playSite': 'everywhere'}))
+		try:
+			cmd = '`/bin/cat /dev/urandom > /dev/shm/snapfifo`  >/dev/null 2>&1 &'
+			subprocess.call(cmd, shell=True)
+		except Exception as e:
+			self.logDebug(f"Exceptionas: {e} ")
+
+
+	#-----------------------------------------------
+	def setOutSendWhiteNoise(self, sendOutWhiteNoise :str) -> bool:
+		self._sendOutWhiteNoise = sendOutWhiteNoise
+
+		# self.logDebug(f"Going into setSendWhiteNoise - self._sendOutWhiteNoise: {self._sendOutWhiteNoise} ")
+		if self._sendOutWhiteNoise:
+			self._stop()
+			self._doSendWhiteNoise()
+		else:
+		 	self._doStopSendNoise()
+
+		return True
