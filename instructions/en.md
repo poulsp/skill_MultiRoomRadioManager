@@ -45,6 +45,7 @@ You play a radio station with voice by saying e.g "radio 14" and the responses f
 In the skills folder ~/ProjectAlice/skills/MultiRoomRadioManager there is a folder utils/UpdatePrintRadiolist, in there we have a standalone app  UpdatePrintRadiolist.py and a file called radio_stations.csv.
 
 To make changes in the radio list stations you add/change them in file 'radio_stations.csv', just with a normal text editor.
+First run ./setup.sh, to create the virtual python environment.
 Then run ./update_print_radioliste.py and the radio stations is updated on the fly in Alice.
 
 The folder can be copied to another location if preferred.
@@ -107,9 +108,10 @@ You play a radio station with voice by saying e.g "radio 14" and the responses f
 In the skills folder ~/ProjectAlice/skills/MultiRoomRadioManager there is a folder utils/UpdatePrintRadiolist, in there we have a standalone app  UpdatePrintRadiolist.py and a file called radio_stations.csv.
 
 To make changes in the radio list stations you add/change them in file 'radio_stations.csv', just with a normal text editor.
+First run ./setup.sh, to create the virtual python environment.
 Then run ./update_print_radioliste.py and the radio stations is updated on the fly in Alice.
 
-The folder can be copied to another location if preferred.
+This folder can be copied to another location if preferred.
 
 
 You can test by download to alice skill folder.
@@ -122,3 +124,4 @@ git clone https://github.com/poulsp/skill_MultiRoomRadioManager MultiRoomRadioMa
 
 
 Use the [PspMultiRoomPlayer](https://github.com/poulsp/PspMultiRoomPlayer) to play the actual sound/music
+You can also control the volume of all devices and listen to radio / music outside (eg via bluetooth) with the Android app [snapcast] (https://play.google.com/store/apps/details?id=de. badaix snapcast)
