@@ -41,6 +41,12 @@ You play a radio station with voice by saying e.g "radio 14" and the responses f
 ##### Moving stream:
 	"move to lounge", "move to office"
 
+##### Skills config
+	In config there is a setting "Send Out White Noise".
+	It is used to send noise to all your speakers, so you can adjust the volume level in decibel.
+	You then can have the same level for all speaker which is nice when you walk from room to room.
+	I use a decibel meter from my phone's app store.
+
 
 In the skills folder ~/ProjectAlice/skills/MultiRoomRadioManager there is a folder utils/UpdatePrintRadiolist, in there we have a standalone app  UpdatePrintRadiolist.py and a file called radio_stations.csv.
 
