@@ -2,6 +2,8 @@ from os import path
 import json
 import subprocess
 
+# from core.util.model.Logger import Logger
+
 
 
 class WebRadioManager():
@@ -94,16 +96,24 @@ class WebRadioManager():
 	def startWebserver(self):
 		if self._CanStartServer:
 			try:
+					# "whoami",
+					# "nvm current",
+					# "/usr/bin/which node",
 				node = subprocess.check_output(
-					"which node",
+					f"{WebRadioManager._exportCmd} && /usr/bin/which node",
 					stderr=subprocess.STDOUT,
 					shell=True
 				).decode('utf-8').replace('\n','')
 
 			except subprocess.CalledProcessError:
+			# except subprocess.CalledProcessError as e:
+				# Logger().logInfo(f"########################################## line 112 except: {e}")
 				cmd =f"cd ~/ProjectAlice/skills/MultiRoomRadioManager/webRadio/MyExtra  && {WebRadioManager._exportCmd} && ./webRadio-start.sh > /dev/null 2>&1 &"
+				return
 
+			node = node[3:] #nvm/home/pi/.nvm/versions/node/v12.18.4/bin/node
 			cmd =f"{node} ~/ProjectAlice/skills/MultiRoomRadioManager/webRadio/bin/www > /dev/null 2>&1 &"
+
 			subprocess.call(cmd, shell=True)
 
 	#-----------------------------------------------

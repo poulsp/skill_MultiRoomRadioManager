@@ -107,6 +107,10 @@ class MultiRoomRadioManager(AliceSkill):
 
 		self._readRadioStations()
 		self.playEverywhereAsDefault = self.getConfig('playEverywhereAsDefault')
+
+		self._setDNDWhenStartPlaying = self.getConfig('setDNDWhenStartPlaying')
+		self._dndTopic = self.getConfig('dndTopic').strip()
+
 		self._rooms = self.getConfig('rooms')
 		self._rooms = self._rooms.split(',')
 		for i in range(len(self._rooms)):
@@ -172,8 +176,8 @@ class MultiRoomRadioManager(AliceSkill):
 		url = 'http://localhost:5001/api/v1.0.1/login/'
 		headers = {}
 		payload = {
-		  "username": "admin",
-		  "pin": adminPinCode
+			"username": "admin",
+			"pin": adminPinCode
 		}
 
 		response = requests.request('POST', url, data=payload, headers=headers)
@@ -181,7 +185,7 @@ class MultiRoomRadioManager(AliceSkill):
 
 		url = 'http://localhost:5001/api/v1.0.1/utils/config/'
 		headers = {
-		  "auth": apiToken
+			"auth": apiToken
 		}
 
 		response = requests.request('GET', url, headers=headers)
@@ -280,10 +284,34 @@ class MultiRoomRadioManager(AliceSkill):
 
 
 	#-----------------------------------------------
+	def _checkFifo(self):
+		try:
+			_output = subprocess.check_output(
+				"ls -l /dev/shm/snapfifo | awk '{print $5}'",
+				stderr=subprocess.STDOUT,
+				shell=True
+			).decode('utf-8').replace('\n','')
+
+			if int(_output) > 0:
+				removeFifoCmd ="rm /dev/shm/*fifo"
+				subprocess.call(removeFifoCmd, shell=True)
+				restartSnapserveerCmd ="sudo systemctl restart snapserver"
+				subprocess.call(restartSnapserveerCmd, shell=True)
+
+		except subprocess.CalledProcessError as e:
+			raise e
+
+
+	#-----------------------------------------------
 	def _stopFfmpeg(self):
 		cmdKill = "/usr/bin/killall -2 ffmpeg >/dev/null 2>&1"
 		if self._playing:
 			subprocess.call(cmdKill, shell=True)
+
+		# This is more a symptom treatment than a cure.
+		# Sometimes it let snapfifo growth.
+		# TODO investigate
+		self._checkFifo()
 
 
 	#-----------------------------------------------
@@ -359,6 +387,9 @@ class MultiRoomRadioManager(AliceSkill):
 				radioPlayingNow = [self._stationCurrent, self._stationName]
 
 				self.endDialog(session.sessionId, self.randomTalk('radioPlaying', radioPlayingNow))
+
+				if self._setDNDWhenStartPlaying:
+					self.publish(self._dndTopic, '')
 
 			else:
 				self._playing = False
@@ -538,6 +569,13 @@ class MultiRoomRadioManager(AliceSkill):
 			self._stop()
 			self._doSendWhiteNoise()
 		else:
-		 	self._doStopSendNoise()
+			self._doStopSendNoise()
+
+		return True
+
+
+	#-----------------------------------------------
+	def setDNDWhenStartPlaying(self, setDNDWhenStartPlaying :str) -> bool:
+		self._setDNDWhenStartPlaying = setDNDWhenStartPlaying
 
 		return True

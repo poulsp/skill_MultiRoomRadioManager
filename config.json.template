@@ -43,6 +43,18 @@
 		"dataType": "integer",
 		"isSensitive": false,
 		"description": "Setting the volume level when sending white noise out on the lan."
+	},
+	"setDNDWhenStartPlaying": {
+		"defaultValue": "true",
+		"dataType": "boolean",
+		"isSensitive": false,
+		"description": "Set DND so wakework dont trigger when playing.",
+		"onUpdate": "setDNDWhenStartPlaying"
+	},
+	"dndTopic": {
+		"defaultValue": "psp/dnd",
+		"dataType": "string",
+		"isSensitive": false,
+		"description": "dndTopic, whatever topic you use."
 	}
-
 }
