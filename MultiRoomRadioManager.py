@@ -292,11 +292,16 @@ class MultiRoomRadioManager(AliceSkill):
 				shell=True
 			).decode('utf-8').replace('\n','')
 
-			if int(_output) > 0:
+			if _output == "ls: cannot access '/dev/shm/snapfifo': No such file or directory":
+				mkfifoCmd ="mkfifo /dev/shm/snapfifo -m666"
+				subprocess.call(mkfifoCmd, shell=True)
+				return
+
+			elif int(_output) > 0:
 				removeFifoCmd ="rm /dev/shm/*fifo"
 				subprocess.call(removeFifoCmd, shell=True)
-				restartSnapserveerCmd ="sudo systemctl restart snapserver"
-				subprocess.call(restartSnapserveerCmd, shell=True)
+				restartSnapserverCmd ="sudo systemctl restart snapserver"
+				subprocess.call(restartSnapserverCmd, shell=True)
 
 		except subprocess.CalledProcessError as e:
 			raise e
